@@ -1,0 +1,6 @@
+name: 'Tor'
+version: '${project.version}'
+main: ru.ancap.chat.protect.plugin.Tor
+api-version: 1.19
+authors: [ PukPukov ]
+description: Plugin for protecting chat

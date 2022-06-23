@@ -1,0 +1,12 @@
+ru\ancap\tor\api\develop\IllegalChecker.class
+ru\ancap\tor\api\develop\template\ChatProtectRule.class
+ru\ancap\tor\api\develop\PotentialProviderGroup.class
+ru\ancap\tor\api\develop\event\ChatForm.class
+ru\ancap\tor\api\develop\PotentialProvider.class
+ru\ancap\tor\api\develop\event\CommandForm.class
+ru\ancap\tor\api\connect\TorAPI.class
+ru\ancap\tor\api\develop\SameSymbol.class
+ru\ancap\tor\api\develop\config\TorConfig.class
+ru\ancap\tor\api\develop\ChatProtector.class
+ru\ancap\tor\api\develop\event\EventForm.class
+ru\ancap\tor\api\develop\SameSymbolsAbsoluter.class

@@ -1,0 +1,5 @@
+name: TorRule-AncapMine
+version: '${project.version}'
+main: ru.ancap.tor.rule.ancapmine.plugin.Rule
+api-version: 1.19
+depend: [Tor]
