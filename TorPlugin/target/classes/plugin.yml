@@ -1,5 +1,5 @@
 name: 'Tor'
-version: '${project.version}'
+version: '1.0'
 main: ru.ancap.tor.plugin.Tor
 api-version: 1.19
 authors: [ PukPukov ]

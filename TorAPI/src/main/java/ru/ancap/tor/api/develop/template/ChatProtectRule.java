@@ -83,7 +83,7 @@ public abstract class ChatProtectRule implements ChatProtector {
             chars.add(ch);
         }
         int index = 0;
-        while (chars.size() >= index + 1) {
+        while (chars.size() > index + 1) {
             if (chars.get(index).equals(chars.get(index + 1))) {
                 chars.remove(index + 1);
                 continue;
@@ -99,7 +99,7 @@ public abstract class ChatProtectRule implements ChatProtector {
 
     private String remove(String str, char[] chars) {
         for (Character ch : chars) {
-            str = str.replaceAll(ch.toString(), "");
+            str = str.replace(ch.toString(), "");
         }
         return str;
     }

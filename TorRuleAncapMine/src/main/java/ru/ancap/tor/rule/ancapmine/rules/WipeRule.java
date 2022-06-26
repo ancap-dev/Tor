@@ -8,10 +8,10 @@ public class WipeRule extends ChatProtectRule {
 
     public WipeRule() {
         super(
-                "вайп",
+                "ваип",
                 "випе",
-                "новыйсезон",
-                "вейп"
+                "новыисезон",
+                "веип"
         );
     }
 

@@ -1,6 +1,6 @@
 package ru.ancap.tor.rule.ancapmine.plugin;
 
-import com.sun.tools.javac.util.List;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 import ru.ancap.tor.api.connect.TorAPI;
 import ru.ancap.tor.api.develop.ChatProtector;
@@ -8,7 +8,11 @@ import ru.ancap.tor.rule.ancapmine.plugin.config.RuleConfig;
 import ru.ancap.tor.rule.ancapmine.rules.EdemRule;
 import ru.ancap.tor.rule.ancapmine.rules.WipeRule;
 
+import java.util.List;
+
 public final class Rule extends JavaPlugin {
+
+    private static Plugin plugin;
 
     private final List<ChatProtector> rules = List.of(
             new EdemRule(),
@@ -19,6 +23,15 @@ public final class Rule extends JavaPlugin {
     public void onEnable() {
         this.loadConfig();
         this.loadRules();
+        this.loadPlugin();
+    }
+
+    public static Plugin loaded() {
+        return plugin;
+    }
+
+    private void loadPlugin() {
+        plugin = this;
     }
 
     private void loadConfig() {

@@ -6,8 +6,9 @@ import net.md_5.bungee.api.chat.ComponentBuilder;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
-import ru.ancap.tor.api.develop.template.ChatProtectRule;
 import ru.ancap.tor.api.develop.event.EventForm;
+import ru.ancap.tor.api.develop.template.ChatProtectRule;
+import ru.ancap.tor.rule.ancapmine.plugin.Rule;
 
 public class EdemRule extends ChatProtectRule {
 
@@ -33,14 +34,14 @@ public class EdemRule extends ChatProtectRule {
                             "ban "+form.getPlayer().getName()+" §cНе пиарь на Анкапе всякие параши. За разбаном обращайся к vk.com/vovanchikputin"
                     );
                 }
-            }.run();
+            }.runTask(Rule.loaded());
         }
         if (lowerCaseMessage.contains("эдем")) {
             player.spigot().sendMessage(
                     new ComponentBuilder("Если хочешь узнать, что такое \"Эдем\", кликни по этому сообщению.")
                             .event(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://vk.com/@puk_pukov-istoriya-samogo-bolshogo-obmana-server-dlya-ikarusa"))
-                            .color(ChatColor.RED)
                             .color(ChatColor.UNDERLINE)
+                            .color(ChatColor.RED)
                             .create()
             );
         }

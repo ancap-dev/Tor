@@ -1,0 +1,3 @@
+send_debug: true
+debug_message: "Наведи, чтобы посмотреть информацию для отладки"
+debug_hover_message: "Триггер: %trigger%"
