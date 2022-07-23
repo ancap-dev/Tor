@@ -1,0 +1,8 @@
+name: Tor
+version: '${project.version}'
+main: ru.ancap.tor.Tor
+api-version: 1.19
+prefix: Tor
+authors: [ PukPukov ]
+description: Anti-anti-antixray plugin. Kicks players, that uses antixray.
+website: vk.com/vovanchikputin
